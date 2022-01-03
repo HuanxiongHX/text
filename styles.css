@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: white;
+    background-image: url("images/beijingx.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    text-align: center;
+
+}
+
+header a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .logo a{
+    
+    background-image: url("images/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 200px;
+    position: relative;
+    text-indent: -9999999px;
+    right: -20px;
+    top: -130px;
+    width: 300px; 
+}
+
+
+ nav ul{
+     list-style-type: none;
+     padding:0; margin: 0;
+     font-weight: bold;
+ }
+
+ nav li{
+     display: inline-block; 
+    margin-right: 20px;
+ }
+
+ @media screen and (max-width: 787px) {
+    header{
+        height: 200px;
+    }
+   header .mobile{
+       display: inline-block;
+   }
+   header .desktop{
+       display:none ;
+   }
+ }
+
+
+ .important{
+     background-image: url(images/beijing.jpg);
+     background-size: 100%;
+     color: gray;
+     padding: 20px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+
+.important figure{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.important figure img{
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    width: 200px;
+}
+
+/* @media screen and (max-width: 787px){
+    .important{
+        display: block;
+    }
+} */
+
+footer{
+    background-color:rgb(55, 202, 221);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
